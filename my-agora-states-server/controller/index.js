@@ -36,9 +36,6 @@ const discussionsController = {
     // ADVANCED: path parameter id를 가진 discussion을 요청에 맞게 변경합니다.
   },
 
-  deleteById: (req, res) => {
-    // ADVANCED: path parameter id를 가진 discussion을 삭제합니다.
-  },
 };
 
 module.exports = {
