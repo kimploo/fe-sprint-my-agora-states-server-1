@@ -4,11 +4,19 @@ const { findAll, findById } = discussionsController;
 const express = require('express');
 const router = express.Router();
 
-// TODO: 모든 discussions 목록을 조회하는 라우터를 작성합니다.
-router.get('/', findAll);
+// TODO: 모든 discussion 목록을 조회하는 라우터를 작성합니다.
 
-// TODO: :id에 맞는 discussion을 조회하는 라우터를 작성합니다.
-
+// TODO: discussion 하나를 조회하는 라우터를 작성합니다.
 router.get('/:id', findById);
+// :id => path parameter => req.params.id
+// ?q=hello => query parameter => req.query.q
+
+// TODO: discussion 하나를 생성하는 라우터를 작성합니다.
+router.post('/', createOne);
+
+// TODO: discussion 하나를 수정하는 라우터를 작성합니다.
+router.put('/:id', updateById);
+
+// ADVANCED: discussion 하나를 삭제하는 라우터를 작성합니다.
 
 module.exports = router;
